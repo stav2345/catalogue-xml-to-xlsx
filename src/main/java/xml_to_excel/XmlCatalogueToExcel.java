@@ -82,8 +82,8 @@ public class XmlCatalogueToExcel {
 		try {
 			converter.convertXmlToExcel();
 		} catch (TransformerException e) {
-			e.printStackTrace();
 			LOGGER.error("Cannot convert xml to xlsx", e);
+			e.printStackTrace();
 		}
 	}
 
@@ -227,8 +227,8 @@ public class XmlCatalogueToExcel {
 			}
 
 		} catch (IOException e) {
-			e.printStackTrace();
 			LOGGER.error("Cannot convert xml to xlsx", e);
+			e.printStackTrace();
 		}
 	}
 }

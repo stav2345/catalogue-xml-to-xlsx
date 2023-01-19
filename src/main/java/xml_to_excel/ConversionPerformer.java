@@ -74,6 +74,8 @@ public abstract class ConversionPerformer {
 			Files.delete( Paths.get(outputFilename) );
 		} catch (IOException e) {
 			//e.printStackTrace();
+			LOGGER.error("Error during delete ", e);
+			e.printStackTrace();
 		}
 
 		// save the created sheet
